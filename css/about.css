@@ -1,0 +1,1582 @@
+/* =====================================================
+   VENTO FURNITURE ABOUT PAGE
+===================================================== */
+
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+:root {
+
+    --vento-black: #090909;
+
+    --vento-dark: #151515;
+
+    --vento-purple: #4c3c72;
+
+    --vento-light-purple: #716398;
+
+    --vento-gold: #c5a45a;
+
+    --white: #ffffff;
+
+    --light: #f6f6f6;
+
+    --gray: #666;
+
+}
+
+
+
+/* =====================================================
+   GENERAL
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        "Montserrat",
+        Arial,
+        sans-serif;
+
+    background:
+        white;
+
+    color:
+        var(--vento-black);
+
+    overflow-x:
+        hidden;
+
+}
+
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+
+    background:
+        rgba(255,255,255,.97);
+
+    padding:
+        10px 0;
+
+    border-bottom:
+        1px solid #ddd;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.navbar.scrolled {
+
+    box-shadow:
+        0 4px 20px
+        rgba(0,0,0,.15);
+
+}
+
+
+.navbar-brand {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    line-height:
+        .9;
+
+    text-decoration:
+        none;
+
+}
+
+
+.brand-name {
+
+    font-family:
+        "Cinzel",
+        serif;
+
+    font-size:
+        1.7rem;
+
+    letter-spacing:
+        5px;
+
+    color:
+        #111;
+
+}
+
+
+.brand-subtitle {
+
+    font-size:
+        .65rem;
+
+    letter-spacing:
+        4px;
+
+    font-weight:
+        700;
+
+    text-align:
+        center;
+
+    margin-top:
+        5px;
+
+}
+
+
+.nav-link {
+
+    color:
+        #111 !important;
+
+    font-weight:
+        600;
+
+    padding:
+        10px 15px !important;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.nav-link:hover {
+
+    color:
+        var(--vento-purple) !important;
+
+}
+
+
+.nav-link.active {
+
+    color:
+        var(--vento-purple) !important;
+
+    border-bottom:
+        2px solid
+        var(--vento-purple);
+
+}
+
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.vento-hero {
+
+    position:
+        relative;
+
+    width:
+        100%;
+
+    min-height:
+        850px;
+
+    margin-top:
+        70px;
+
+    overflow:
+        hidden;
+
+    background:
+        #e9e7ef;
+
+}
+
+
+
+/* IMAGE */
+
+.hero-image {
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    z-index:
+        1;
+
+}
+
+
+.hero-image img {
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    object-fit:
+        cover;
+
+    object-position:
+        center;
+
+}
+
+
+
+/* PURPLE TINT */
+
+.hero-purple {
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    background:
+        rgba(
+            75,
+            57,
+            115,
+            .68
+        );
+
+    z-index:
+        2;
+
+}
+
+
+
+/* =====================================================
+   HERO BRAND
+===================================================== */
+
+.hero-brand {
+
+    position:
+        absolute;
+
+    top:
+        55px;
+
+    left:
+        50%;
+
+    transform:
+        translateX(-50%);
+
+    z-index:
+        3;
+
+    text-align:
+        center;
+
+    color:
+        #050505;
+
+}
+
+
+.hero-brand h1 {
+
+    font-family:
+        "Cinzel",
+        serif;
+
+    font-size:
+        clamp(
+            3rem,
+            8vw,
+            6rem
+        );
+
+    font-weight:
+        500;
+
+    letter-spacing:
+        8px;
+
+    margin:
+        0;
+
+}
+
+
+.brand-line {
+
+    width:
+        210px;
+
+    height:
+        2px;
+
+    background:
+        #111;
+
+    margin:
+        4px auto;
+
+}
+
+
+.hero-brand h3 {
+
+    font-size:
+        clamp(
+            1rem,
+            2vw,
+            1.5rem
+        );
+
+    letter-spacing:
+        5px;
+
+    font-weight:
+        700;
+
+}
+
+
+
+/* =====================================================
+   EXCEPTIONAL VALUE BOX
+===================================================== */
+
+.value-box {
+
+    position:
+        absolute;
+
+    z-index:
+        4;
+
+    top:
+        56%;
+
+    left:
+        50%;
+
+    transform:
+        translate(
+            -50%,
+            -50%
+        );
+
+    width:
+        min(
+            75%,
+            600px
+        );
+
+    padding:
+        20px 30px;
+
+    background:
+        rgba(
+            5,
+            5,
+            5,
+            .94
+        );
+
+    text-align:
+        center;
+
+    border:
+        2px solid
+        rgba(
+            255,
+            255,
+            255,
+            .1
+        );
+
+    box-shadow:
+        0 15px 35px
+        rgba(
+            0,
+            0,
+            0,
+            .35
+        );
+
+}
+
+
+.value-box h2 {
+
+    color:
+        var(--vento-gold);
+
+    font-family:
+        "Cinzel",
+        serif;
+
+    font-size:
+        clamp(
+            2rem,
+            5vw,
+            4.5rem
+        );
+
+    line-height:
+        1;
+
+    letter-spacing:
+        3px;
+
+    margin:
+        0;
+
+}
+
+
+
+/* =====================================================
+   QUALITY TEXT
+===================================================== */
+
+.quality-text {
+
+    position:
+        absolute;
+
+    z-index:
+        5;
+
+    top:
+        calc(
+            56% + 100px
+        );
+
+    left:
+        50%;
+
+    transform:
+        translateX(-50%);
+
+    color:
+        #080808;
+
+    font-family:
+        "Cinzel",
+        serif;
+
+    font-size:
+        clamp(
+            1.2rem,
+            3vw,
+            2.2rem
+        );
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        5px;
+
+    white-space:
+        nowrap;
+
+}
+
+
+
+/* =====================================================
+   WARRANTY
+===================================================== */
+
+.warranty {
+
+    position:
+        absolute;
+
+    z-index:
+        5;
+
+    left:
+        50%;
+
+    bottom:
+        80px;
+
+    transform:
+        translateX(-50%);
+
+}
+
+
+.warranty-circle {
+
+    width:
+        90px;
+
+    height:
+        90px;
+
+    border:
+        5px solid
+        #111;
+
+    border-radius:
+        50%;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .75
+        );
+
+}
+
+
+.warranty-circle strong {
+
+    font-size:
+        1.5rem;
+
+}
+
+
+.warranty-circle span {
+
+    font-size:
+        .5rem;
+
+    font-weight:
+        800;
+
+}
+
+
+.warranty-circle small {
+
+    background:
+        #9c1932;
+
+    color:
+        white;
+
+    font-size:
+        .5rem;
+
+    padding:
+        3px 8px;
+
+    margin-top:
+        3px;
+
+}
+
+
+
+/* =====================================================
+   ABOUT INFORMATION
+===================================================== */
+
+.about-information {
+
+    padding:
+        90px 0;
+
+    background:
+        white;
+
+}
+
+
+.section-label {
+
+    display:
+        inline-block;
+
+    color:
+        var(--vento-purple);
+
+    font-size:
+        .8rem;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        3px;
+
+    margin-bottom:
+        12px;
+
+}
+
+
+.about-content h2 {
+
+    font-family:
+        "Cinzel",
+        serif;
+
+    font-size:
+        clamp(
+            2rem,
+            4vw,
+            3.3rem
+        );
+
+    margin-bottom:
+        25px;
+
+}
+
+
+.about-content p {
+
+    color:
+        #444;
+
+    line-height:
+        1.8;
+
+    margin-bottom:
+        15px;
+
+}
+
+
+
+/* CONTACT DETAILS */
+
+.contact-details {
+
+    margin-top:
+        30px;
+
+}
+
+
+.contact-item {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    margin-bottom:
+        15px;
+
+    font-weight:
+        600;
+
+}
+
+
+.contact-item i {
+
+    width:
+        38px;
+
+    height:
+        38px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    background:
+        var(--vento-black);
+
+    color:
+        white;
+
+    border-radius:
+        50%;
+
+}
+
+
+
+/* =====================================================
+   QR CODE
+===================================================== */
+
+.qr-section {
+
+    text-align:
+        center;
+
+    padding:
+        35px;
+
+    background:
+        #f5f5f5;
+
+    border:
+        1px solid #ddd;
+
+}
+
+
+.qr-title {
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        2px;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.qr-code {
+
+    width:
+        190px;
+
+    max-width:
+        100%;
+
+    height:
+        auto;
+
+    padding:
+        10px;
+
+    background:
+        white;
+
+    border:
+        5px solid
+        #111;
+
+}
+
+
+.qr-section p {
+
+    margin:
+        20px 0 0;
+
+    color:
+        #555;
+
+    font-size:
+        .9rem;
+
+    line-height:
+        1.6;
+
+}
+
+
+
+/* =====================================================
+   LOCATIONS
+===================================================== */
+
+.locations-section {
+
+    padding:
+        75px 0;
+
+    background:
+        var(--vento-black);
+
+    color:
+        white;
+
+}
+
+
+.locations-section h2 {
+
+    font-family:
+        "Cinzel",
+        serif;
+
+    font-size:
+        clamp(
+            2rem,
+            4vw,
+            3rem
+        );
+
+    margin-bottom:
+        35px;
+
+}
+
+
+.locations-section .section-label {
+
+    color:
+        var(--vento-gold);
+
+}
+
+
+.location-list {
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        0;
+
+}
+
+
+.location-list span {
+
+    padding:
+        8px 22px;
+
+    border-right:
+        1px solid #555;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        1px;
+
+}
+
+
+.location-list span:last-child {
+
+    border-right:
+        none;
+
+}
+
+
+
+/* =====================================================
+   WHY VENTO
+===================================================== */
+
+.why-vento {
+
+    padding:
+        80px 0;
+
+    background:
+        #f5f5f5;
+
+}
+
+
+.feature-card {
+
+    background:
+        white;
+
+    text-align:
+        center;
+
+    padding:
+        40px 25px;
+
+    height:
+        100%;
+
+    border:
+        1px solid #ddd;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.feature-card:hover {
+
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(
+            0,
+            0,
+            0,
+            .12
+        );
+
+}
+
+
+.feature-card i {
+
+    font-size:
+        2.5rem;
+
+    color:
+        var(--vento-purple);
+
+}
+
+
+.feature-card h3 {
+
+    margin:
+        20px 0 12px;
+
+    font-family:
+        "Cinzel",
+        serif;
+
+}
+
+
+.feature-card p {
+
+    color:
+        #666;
+
+    line-height:
+        1.7;
+
+}
+
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.cta {
+
+    padding:
+        80px 20px;
+
+    text-align:
+        center;
+
+    color:
+        white;
+
+    background:
+        linear-gradient(
+            120deg,
+            #302347,
+            #5a477f
+        );
+
+}
+
+
+.cta h2 {
+
+    font-family:
+        "Cinzel",
+        serif;
+
+    font-size:
+        clamp(
+            2rem,
+            5vw,
+            3.5rem
+        );
+
+}
+
+
+.cta p {
+
+    margin:
+        15px 0 30px;
+
+}
+
+
+.cta-button {
+
+    display:
+        inline-block;
+
+    padding:
+        14px 30px;
+
+    background:
+        var(--vento-gold);
+
+    color:
+        #111;
+
+    text-decoration:
+        none;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        1px;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.cta-button:hover {
+
+    background:
+        white;
+
+    color:
+        #111;
+
+}
+
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+
+    background:
+        #050505;
+
+    color:
+        white;
+
+    padding:
+        45px 0 20px;
+
+}
+
+
+.footer-logo {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+}
+
+
+.footer-logo strong {
+
+    font-family:
+        "Cinzel",
+        serif;
+
+    font-size:
+        2rem;
+
+    letter-spacing:
+        5px;
+
+}
+
+
+.footer-logo span {
+
+    font-size:
+        .7rem;
+
+    letter-spacing:
+        4px;
+
+}
+
+
+.footer-social {
+
+    display:
+        flex;
+
+    justify-content:
+        flex-end;
+
+    gap:
+        15px;
+
+}
+
+
+.footer-social a {
+
+    width:
+        40px;
+
+    height:
+        40px;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    color:
+        white;
+
+    border:
+        1px solid #555;
+
+    border-radius:
+        50%;
+
+    text-decoration:
+        none;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.footer-social a:hover {
+
+    background:
+        var(--vento-purple);
+
+    border-color:
+        var(--vento-purple);
+
+}
+
+
+.footer hr {
+
+    border-color:
+        #444;
+
+    margin:
+        30px 0 20px;
+
+}
+
+
+.copyright {
+
+    text-align:
+        center;
+
+    color:
+        #888;
+
+    font-size:
+        .8rem;
+
+}
+
+
+
+/* =====================================================
+   BACK TO TOP
+===================================================== */
+
+.back-to-top {
+
+    position:
+        fixed;
+
+    right:
+        25px;
+
+    bottom:
+        25px;
+
+    width:
+        45px;
+
+    height:
+        45px;
+
+    border:
+        none;
+
+    border-radius:
+        50%;
+
+    background:
+        var(--vento-purple);
+
+    color:
+        white;
+
+    display:
+        none;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    z-index:
+        999;
+
+}
+
+
+.back-to-top.show {
+
+    display:
+        flex;
+
+}
+
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .vento-hero {
+
+        min-height:
+            750px;
+
+    }
+
+
+    .hero-brand {
+
+        top:
+            45px;
+
+    }
+
+
+    .value-box {
+
+        top:
+            55%;
+
+    }
+
+
+    .quality-text {
+
+        top:
+            calc(
+                55% + 90px
+            );
+
+    }
+
+
+    .footer-social {
+
+        justify-content:
+            flex-start;
+
+        margin-top:
+            20px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+
+        padding:
+            8px 0;
+
+    }
+
+
+    .nav-link.active {
+
+        border-bottom:
+            none;
+
+    }
+
+
+    .vento-hero {
+
+        min-height:
+            650px;
+
+        margin-top:
+            62px;
+
+    }
+
+
+    .hero-brand {
+
+        top:
+            40px;
+
+    }
+
+
+    .hero-brand h1 {
+
+        font-size:
+            3.1rem;
+
+        letter-spacing:
+            4px;
+
+    }
+
+
+    .brand-line {
+
+        width:
+            150px;
+
+    }
+
+
+    .hero-brand h3 {
+
+        font-size:
+            .9rem;
+
+        letter-spacing:
+            3px;
+
+    }
+
+
+    .value-box {
+
+        width:
+            85%;
+
+        top:
+            55%;
+
+        padding:
+            15px;
+
+    }
+
+
+    .value-box h2 {
+
+        font-size:
+            2.1rem;
+
+    }
+
+
+    .quality-text {
+
+        top:
+            calc(
+                55% + 75px
+            );
+
+        font-size:
+            1rem;
+
+        letter-spacing:
+            2px;
+
+    }
+
+
+    .warranty {
+
+        bottom:
+            45px;
+
+    }
+
+
+    .warranty-circle {
+
+        width:
+            70px;
+
+        height:
+            70px;
+
+    }
+
+
+    .about-information {
+
+        padding:
+            60px 0;
+
+    }
+
+
+    .qr-section {
+
+        margin-top:
+            20px;
+
+    }
+
+
+    .location-list span {
+
+        border:
+            none;
+
+        width:
+            100%;
+
+        padding:
+            8px;
+
+    }
+
+
+    .footer {
+
+        text-align:
+            center;
+
+    }
+
+
+    .footer-social {
+
+        justify-content:
+            center;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .vento-hero {
+
+        min-height:
+            590px;
+
+    }
+
+
+    .hero-brand h1 {
+
+        font-size:
+            2.5rem;
+
+    }
+
+
+    .hero-brand h3 {
+
+        font-size:
+            .75rem;
+
+    }
+
+
+    .value-box {
+
+        top:
+            53%;
+
+    }
+
+
+    .value-box h2 {
+
+        font-size:
+            1.7rem;
+
+    }
+
+
+    .quality-text {
+
+        top:
+            calc(
+                53% + 65px
+            );
+
+        font-size:
+            .8rem;
+
+    }
+
+}

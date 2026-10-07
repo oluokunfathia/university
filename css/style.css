@@ -1,0 +1,1344 @@
+/* =====================================================
+   RUTGERS UNIVERSITY-CAMDEN
+   INDEX PAGE
+===================================================== */
+
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+:root {
+
+    --rutgers-red: #cc0033;
+
+    --dark-red: #8f0025;
+
+    --deep-red: #65001b;
+
+    --light-bg: #f8f7f5;
+
+    --white: #ffffff;
+
+    --black: #111111;
+
+    --gray: #555555;
+
+}
+
+
+
+/* =====================================================
+   GENERAL
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        "Montserrat",
+        Arial,
+        sans-serif;
+
+    background:
+        var(--light-bg);
+
+    color:
+        var(--black);
+
+    overflow-x: hidden;
+
+}
+
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.navbar {
+
+    background:
+        rgba(255, 255, 255, .97);
+
+    padding:
+        12px 0;
+
+    border-bottom:
+        1px solid #ddd;
+
+    transition:
+        all .3s ease;
+
+}
+
+
+.navbar.scrolled {
+
+    box-shadow:
+        0 4px 20px
+        rgba(0, 0, 0, .15);
+
+}
+
+
+.navbar-brand {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
+    color:
+        var(--rutgers-red) !important;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        2px;
+
+}
+
+
+.r-logo {
+
+    width:
+        40px;
+
+    height:
+        40px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    background:
+        var(--rutgers-red);
+
+    color:
+        white;
+
+    font-size:
+        1.7rem;
+
+    font-weight:
+        900;
+
+}
+
+
+.nav-link {
+
+    color:
+        #222 !important;
+
+    font-weight:
+        600;
+
+    padding:
+        9px 15px !important;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.nav-link:hover {
+
+    color:
+        var(--rutgers-red) !important;
+
+}
+
+
+.nav-link.active {
+
+    color:
+        var(--rutgers-red) !important;
+
+    border-bottom:
+        3px solid
+        var(--rutgers-red);
+
+}
+
+
+.apply-btn {
+
+    background:
+        var(--rutgers-red);
+
+    color:
+        white !important;
+
+    margin-left:
+        8px;
+
+}
+
+
+.apply-btn:hover {
+
+    background:
+        var(--dark-red);
+
+    color:
+        white !important;
+
+}
+
+
+
+/* =====================================================
+   WELCOME SECTION
+===================================================== */
+
+.welcome-section {
+
+    padding:
+        140px 0 40px;
+
+    min-height:
+        560px;
+
+    position:
+        relative;
+
+    background:
+        linear-gradient(
+            110deg,
+            #ffffff 0%,
+            #f8f7f5 65%,
+            #ece8ea 100%
+        );
+
+}
+
+
+.welcome-section::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    left:
+        70px;
+
+    top:
+        100px;
+
+    width:
+        7px;
+
+    height:
+        430px;
+
+    background:
+        var(--rutgers-red);
+
+}
+
+
+.welcome-title {
+
+    font-size:
+        clamp(
+            3rem,
+            8vw,
+            6.5rem
+        );
+
+    line-height:
+        .9;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        3px;
+
+    color:
+        transparent;
+
+    -webkit-text-stroke:
+        2px #222;
+
+    margin-left:
+        50px;
+
+    margin-bottom:
+        12px;
+
+}
+
+
+.university-title {
+
+    font-size:
+        clamp(
+            1.5rem,
+            4vw,
+            2.8rem
+        );
+
+    color:
+        var(--rutgers-red);
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        1px;
+
+    margin-left:
+        50px;
+
+}
+
+
+.title-line {
+
+    width:
+        130px;
+
+    height:
+        6px;
+
+    background:
+        var(--rutgers-red);
+
+    margin:
+        20px 0 25px 50px;
+
+}
+
+
+.intro-text {
+
+    max-width:
+        850px;
+
+    margin-left:
+        50px;
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size:
+        1.05rem;
+
+    line-height:
+        1.7;
+
+    color:
+        #252525;
+
+}
+
+
+
+/* =====================================================
+   FLAGS
+===================================================== */
+
+.flags-section {
+
+    background:
+        white;
+
+    padding:
+        20px 0 30px;
+
+}
+
+
+.flags-wrapper {
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        12px;
+
+}
+
+
+.flag {
+
+    width:
+        65px;
+
+    height:
+        42px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-size:
+        2rem;
+
+    background:
+        #f4f4f4;
+
+    border:
+        1px solid #ddd;
+
+    box-shadow:
+        0 3px 8px
+        rgba(0,0,0,.12);
+
+    transition:
+        .3s ease;
+
+}
+
+
+.flag:hover {
+
+    transform:
+        translateY(-7px)
+        scale(1.05);
+
+    box-shadow:
+        0 8px 15px
+        rgba(0,0,0,.18);
+
+}
+
+
+
+/* =====================================================
+   CAMPUS IMAGE
+===================================================== */
+
+.campus-section {
+
+    width:
+        100%;
+
+    background:
+        #111;
+
+}
+
+
+.campus-image-wrapper {
+
+    position:
+        relative;
+
+    width:
+        100%;
+
+    overflow:
+        hidden;
+
+}
+
+
+.campus-image {
+
+    width:
+        100%;
+
+    height:
+        650px;
+
+    object-fit:
+        cover;
+
+    display:
+        block;
+
+    filter:
+        brightness(.65);
+
+    transition:
+        transform
+        1s ease;
+
+}
+
+
+.campus-image-wrapper:hover
+.campus-image {
+
+    transform:
+        scale(1.03);
+
+}
+
+
+.campus-overlay {
+
+    position:
+        absolute;
+
+    left:
+        0;
+
+    bottom:
+        0;
+
+    width:
+        100%;
+
+    padding:
+        70px 0;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0,0,0,.85)
+        );
+
+}
+
+
+.campus-content {
+
+    max-width:
+        600px;
+
+    color:
+        white;
+
+}
+
+
+.small-heading {
+
+    color:
+        #ffcc00;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        2px;
+
+}
+
+
+.campus-content h2 {
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            2rem,
+            5vw,
+            4rem
+        );
+
+    margin:
+        10px 0;
+
+}
+
+
+.campus-content p {
+
+    font-size:
+        1.05rem;
+
+    line-height:
+        1.6;
+
+}
+
+
+.discover-btn {
+
+    display:
+        inline-block;
+
+    margin-top:
+        15px;
+
+    padding:
+        12px 25px;
+
+    background:
+        var(--rutgers-red);
+
+    color:
+        white;
+
+    text-decoration:
+        none;
+
+    font-weight:
+        800;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.discover-btn:hover {
+
+    background:
+        white;
+
+    color:
+        var(--rutgers-red);
+
+}
+
+
+
+/* =====================================================
+   INFORMATION
+===================================================== */
+
+.information-section {
+
+    background:
+        white;
+
+    padding:
+        70px 0;
+
+}
+
+
+.info-card {
+
+    padding:
+        35px 25px;
+
+    text-align:
+        center;
+
+    border:
+        1px solid #ddd;
+
+    height:
+        100%;
+
+    background:
+        #fff;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.info-card:hover {
+
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(0,0,0,.12);
+
+}
+
+
+.info-icon {
+
+    width:
+        65px;
+
+    height:
+        65px;
+
+    margin:
+        0 auto 20px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+        var(--rutgers-red);
+
+    color:
+        white;
+
+    font-size:
+        1.5rem;
+
+}
+
+
+.info-card h3 {
+
+    font-size:
+        1.3rem;
+
+    font-weight:
+        800;
+
+    margin-bottom:
+        15px;
+
+}
+
+
+.info-card p {
+
+    color:
+        var(--gray);
+
+    line-height:
+        1.7;
+
+}
+
+
+
+/* =====================================================
+   CALL TO ACTION
+===================================================== */
+
+.cta-section {
+
+    background:
+        var(--rutgers-red);
+
+    color:
+        white;
+
+    padding:
+        55px 0;
+
+}
+
+
+.cta-section h2 {
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size:
+        2.5rem;
+
+}
+
+
+.cta-section p {
+
+    margin:
+        5px 0 0;
+
+}
+
+
+.cta-button {
+
+    display:
+        inline-block;
+
+    background:
+        white;
+
+    color:
+        var(--rutgers-red);
+
+    padding:
+        15px 35px;
+
+    text-decoration:
+        none;
+
+    font-weight:
+        900;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.cta-button:hover {
+
+    background:
+        #111;
+
+    color:
+        white;
+
+}
+
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+
+    background:
+        #171717;
+
+    color:
+        white;
+
+    padding:
+        50px 0 20px;
+
+}
+
+
+.footer-brand {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+}
+
+
+.footer-r {
+
+    width:
+        60px;
+
+    height:
+        60px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    background:
+        var(--rutgers-red);
+
+    font-size:
+        2.5rem;
+
+    font-weight:
+        900;
+
+}
+
+
+.footer-brand h3 {
+
+    margin:
+        0;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        2px;
+
+}
+
+
+.footer-brand p {
+
+    margin:
+        0;
+
+    color:
+        #ccc;
+
+}
+
+
+.footer-links {
+
+    display:
+        flex;
+
+    justify-content:
+        flex-end;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        20px;
+
+}
+
+
+.footer-links a {
+
+    color:
+        #ddd;
+
+    text-decoration:
+        none;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.footer-links a:hover {
+
+    color:
+        var(--rutgers-red);
+
+}
+
+
+.footer hr {
+
+    border-color:
+        #555;
+
+    margin:
+        35px 0 20px;
+
+}
+
+
+.copyright {
+
+    text-align:
+        center;
+
+    color:
+        #aaa;
+
+    font-size:
+        .85rem;
+
+}
+
+
+
+/* =====================================================
+   BACK TO TOP
+===================================================== */
+
+.back-to-top {
+
+    position:
+        fixed;
+
+    right:
+        25px;
+
+    bottom:
+        25px;
+
+    width:
+        45px;
+
+    height:
+        45px;
+
+    border:
+        none;
+
+    border-radius:
+        50%;
+
+    background:
+        var(--rutgers-red);
+
+    color:
+        white;
+
+    display:
+        none;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    z-index:
+        999;
+
+}
+
+
+.back-to-top.show {
+
+    display:
+        flex;
+
+}
+
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .welcome-section {
+
+        padding-top:
+            120px;
+
+    }
+
+
+    .welcome-section::before {
+
+        left:
+            30px;
+
+    }
+
+
+    .welcome-title,
+    .university-title,
+    .intro-text {
+
+        margin-left:
+            30px;
+
+    }
+
+
+    .title-line {
+
+        margin-left:
+            30px;
+
+    }
+
+
+    .campus-image {
+
+        height:
+            500px;
+
+    }
+
+
+    .footer-links {
+
+        justify-content:
+            flex-start;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+
+        padding:
+            8px 0;
+
+    }
+
+
+    .nav-link.active {
+
+        border-bottom:
+            none;
+
+    }
+
+
+    .apply-btn {
+
+        margin-left:
+            0;
+
+        margin-top:
+            5px;
+
+    }
+
+
+    .welcome-section {
+
+        padding:
+            110px 20px 35px;
+
+    }
+
+
+    .welcome-section::before {
+
+        left:
+            15px;
+
+        top:
+            80px;
+
+        height:
+            400px;
+
+        width:
+            4px;
+
+    }
+
+
+    .welcome-title {
+
+        font-size:
+            3.2rem;
+
+        margin-left:
+            20px;
+
+        -webkit-text-stroke:
+            1px #222;
+
+    }
+
+
+    .university-title {
+
+        font-size:
+            1.5rem;
+
+        margin-left:
+            20px;
+
+    }
+
+
+    .title-line {
+
+        margin-left:
+            20px;
+
+    }
+
+
+    .intro-text {
+
+        margin-left:
+            20px;
+
+        font-size:
+            .9rem;
+
+    }
+
+
+    .flags-wrapper {
+
+        gap:
+            7px;
+
+    }
+
+
+    .flag {
+
+        width:
+            45px;
+
+        height:
+            32px;
+
+        font-size:
+            1.4rem;
+
+    }
+
+
+    .campus-image {
+
+        height:
+            430px;
+
+    }
+
+
+    .campus-overlay {
+
+        padding:
+            40px 20px;
+
+    }
+
+
+    .campus-content h2 {
+
+        font-size:
+            2rem;
+
+    }
+
+
+    .cta-section {
+
+        text-align:
+            center;
+
+    }
+
+
+    .cta-section h2 {
+
+        font-size:
+            2rem;
+
+    }
+
+
+    .cta-button {
+
+        margin-top:
+            20px;
+
+    }
+
+
+    .footer {
+
+        text-align:
+            center;
+
+    }
+
+
+    .footer-brand {
+
+        justify-content:
+            center;
+
+    }
+
+
+    .footer-links {
+
+        justify-content:
+            center;
+
+        margin-top:
+            20px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .welcome-title {
+
+        font-size:
+            2.6rem;
+
+    }
+
+
+    .university-title {
+
+        font-size:
+            1.2rem;
+
+    }
+
+
+    .intro-text {
+
+        font-size:
+            .82rem;
+
+    }
+
+
+    .flag {
+
+        width:
+            40px;
+
+        height:
+            28px;
+
+        font-size:
+            1.1rem;
+
+    }
+
+
+    .campus-image {
+
+        height:
+            350px;
+
+    }
+
+}

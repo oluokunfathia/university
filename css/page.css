@@ -1,0 +1,462 @@
+/* ==================================================
+   GENERAL
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f7f0df;
+    color: #40251c;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ==================================================
+   NAVBAR
+================================================== */
+
+.gmh-navbar {
+    background: #f7f0df;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(70, 40, 25, 0.15);
+}
+
+.gmh-logo {
+    color: #563327 !important;
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.gmh-navbar .nav-link {
+    color: #563327;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 25px;
+    position: relative;
+}
+
+.gmh-navbar .nav-link:hover {
+    color: #9a5d3e;
+}
+
+.gmh-navbar .nav-link.active {
+    color: #9a5d3e;
+}
+
+.gmh-navbar .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #9a5d3e;
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.gmh-hero {
+    min-height: 700px;
+    padding: 80px 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255,255,255,0.45),
+            transparent 60%
+        ),
+        #f7f0df;
+}
+
+.hero-content {
+    padding: 40px;
+}
+
+
+/* ==================================================
+   BRAND MARK
+================================================== */
+
+.brand-mark {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.gmh-small {
+    font-family: "Playfair Display", serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #4c3025;
+}
+
+.anniversary {
+    border-left: 1px solid #806353;
+    padding-left: 20px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 45px;
+    color: #6e5548;
+}
+
+
+/* ==================================================
+   MAIN TITLE
+================================================== */
+
+.main-title {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(45px, 6vw, 85px);
+    line-height: 1;
+    font-weight: 400;
+    color: #3f2921;
+    letter-spacing: -3px;
+}
+
+.main-title span {
+    font-weight: 500;
+}
+
+
+/* ==================================================
+   SCRIPT TITLE
+================================================== */
+
+.script-title {
+    font-family: "Pacifico", cursive;
+    font-size: clamp(45px, 6vw, 75px);
+
+    margin-top: 5px;
+
+    background: linear-gradient(
+        90deg,
+        #d1aa37,
+        #9e4e39
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* ==================================================
+   TITLE LINE
+================================================== */
+
+.title-line {
+    width: 100px;
+    height: 4px;
+    background: #704130;
+    margin: 30px 0;
+}
+
+
+/* ==================================================
+   HERO DESCRIPTION
+================================================== */
+
+.hero-description {
+    max-width: 500px;
+    font-size: 17px;
+    line-height: 1.9;
+    color: #5b4034;
+}
+
+
+/* ==================================================
+   HERO IMAGE
+================================================== */
+
+.hero-image-container {
+    position: relative;
+    padding: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+
+    box-shadow:
+        0 20px 50px
+        rgba(50, 30, 20, 0.25);
+
+    transition: 0.6s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.02);
+}
+
+
+/* ==================================================
+   PROMISE SECTION
+================================================== */
+
+.promise-section {
+    background: #fffaf0;
+    padding: 100px 0;
+}
+
+.building-image {
+    overflow: hidden;
+}
+
+.building-image img {
+    width: 100%;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.building-image img:hover {
+    transform: scale(1.04);
+}
+
+
+.promise-content {
+    padding: 40px;
+}
+
+.promise-content h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1.1;
+    color: #573226;
+}
+
+.brown-line {
+    width: 90px;
+    height: 4px;
+    background: #80503d;
+    margin: 25px 0;
+}
+
+.promise-content p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #61483d;
+}
+
+.promise-highlight {
+    font-weight: 600;
+    color: #75412f !important;
+    letter-spacing: 2px;
+}
+
+
+/* ==================================================
+   INFORMATION
+================================================== */
+
+.information-section {
+    padding: 90px 0;
+    background: #6b4030;
+    color: white;
+}
+
+.info-box {
+    padding: 25px;
+}
+
+.info-box i {
+    font-size: 45px;
+    color: #d9b95b;
+}
+
+.info-box h4 {
+    margin-top: 20px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.info-box p {
+    color: #eaded6;
+    line-height: 1.8;
+}
+
+
+/* ==================================================
+   LOCATION
+================================================== */
+
+.locations-section {
+    background: #f7f0df;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.location-content h3 {
+    color: #5a3427;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 3px;
+}
+
+.location-content > p {
+    color: #714b3b;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.contact-details span {
+    color: #654536;
+}
+
+.contact-details i {
+    color: #9a5d3e;
+    margin-right: 7px;
+}
+
+.social-icons {
+    margin-top: 25px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 42px;
+    height: 42px;
+
+    margin: 5px;
+
+    border: 1px solid #7c503d;
+    border-radius: 50%;
+
+    color: #6c4232;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #6c4232;
+    color: white;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.gmh-footer {
+    background: #35221b;
+    color: #e8d9cf;
+    padding: 35px 0;
+}
+
+.gmh-footer h4 {
+    font-family: "Playfair Display", serif;
+    color: #d7b45b;
+    letter-spacing: 3px;
+}
+
+.gmh-footer p {
+    margin: 0;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 991px) {
+
+    .gmh-navbar .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .hero-content {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .brand-mark {
+        justify-content: center;
+    }
+
+    .title-line {
+        margin: 25px auto;
+    }
+
+    .hero-description {
+        margin: auto;
+    }
+
+    .hero-image-container {
+        margin-top: 40px;
+    }
+
+    .promise-content {
+        padding: 40px 10px;
+    }
+
+    .promise-content h2 {
+        text-align: center;
+    }
+
+    .brown-line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .gmh-hero {
+        padding: 45px 15px;
+    }
+
+    .main-title {
+        font-size: 45px;
+    }
+
+    .script-title {
+        font-size: 45px;
+    }
+
+    .brand-mark {
+        gap: 12px;
+    }
+
+    .gmh-small {
+        font-size: 28px;
+    }
+
+    .anniversary {
+        font-size: 32px;
+    }
+
+    .promise-section {
+        padding: 60px 15px;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
